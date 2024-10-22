@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import NavBar from './componenets/NavBar';
+import About from './componenets/About';
+import Project from './componenets/Projects';
+import Contact from './componenets/Contact';
 
-function App() {
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <img src="./viswa.jpg" alt="" width={100} style={border-radius:  '50%'} />
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<h1>Welcome to MST Technological!</h1>} />
+        <Route path="/about" element={<About />} />
+        <Route path="projects" element={<Project />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
