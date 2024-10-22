@@ -9,7 +9,7 @@ import Contact from './componenets/Contact';
 const App: React.FC = () => {
   return (
     <div>
-      <img src="./viswa.jpg" alt="" width={100} style={border-radius:  '50%'} />
+      <img src="./viswa.jpg" alt="Profile" width={100} style={{ borderRadius: '50%' }} />
       <NavBar />
       <Routes>
         <Route path="/" element={<h1>Welcome to MST Technological!</h1>} />

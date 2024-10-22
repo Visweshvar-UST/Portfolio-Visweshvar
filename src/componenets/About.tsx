@@ -4,9 +4,9 @@ const About: React.FC = () => {
   return (
     <main>
       <section>
-        <h1>About MST Technological</h1>
+        <h1>Visweshvar</h1>
         <p>
-          Welcome to MST Technological, a platform dedicated to providing top-notch e-learning resources for tech enthusiasts.
+        Indian coder | DSA, debugging, Java, C++, Python, web dev enthusiast | BERT NLP, AI, ML explorer 🧠| Keen on pencil sketches & digital art 🎨| Let's build! 💻✨.
         </p>
       </section>
     </main>
